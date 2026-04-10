@@ -1,0 +1,29 @@
+.footer {
+  background: var(--deep-brown);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.cities {
+  margin-top: 4px;
+}

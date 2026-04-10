@@ -1,0 +1,51 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1px solid var(--stone);
+}
+
+.stars {
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.av {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--warm-brown);
+}
+
+.name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--deep-brown);
+}
+
+.loc {
+  font-size: 0.72rem;
+  color: var(--muted);
+}

@@ -1,0 +1,17 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--deep-brown);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

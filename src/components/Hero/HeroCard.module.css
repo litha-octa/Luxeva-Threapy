@@ -1,0 +1,85 @@
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  width: 320px;
+  position: relative;
+  z-index: 1;
+  animation: floatUp 0.8s ease-out both;
+}
+
+.label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 1rem 0;
+}
+
+.therapistRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.avatars {
+  display: flex;
+}
+
+.av {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  margin-left: -6px;
+}
+
+.av:first-child {
+  margin-left: 0;
+}
+
+.therapistInfo {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.therapistInfo strong {
+  color: rgba(255, 255, 255, 0.95);
+  display: block;
+  margin-bottom: 1px;
+}
+
+.bookBtn {
+  width: 100%;
+  background: var(--white);
+  color: var(--deep-brown);
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.bookBtn:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,35 @@
+.primary {
+  background: var(--deep-brown);
+  color: var(--white);
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.primary:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.outline {
+  background: transparent;
+  color: var(--deep-brown);
+  border: 1.5px solid var(--stone);
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

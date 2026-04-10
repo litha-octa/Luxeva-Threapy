@@ -1,0 +1,87 @@
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.featured {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.featured .tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.4rem;
+}
+
+.featured .name {
+  color: var(--white);
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.featured .desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent-light);
+}
+
+.featured .price {
+  color: var(--white);
+}
+
+.price small {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}

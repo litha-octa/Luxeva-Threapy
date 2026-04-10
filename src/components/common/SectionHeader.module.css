@@ -1,0 +1,26 @@
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 600;
+  color: var(--deep-brown);
+  line-height: 1.15;
+}
+
+.dark {
+  color: var(--white);
+}
