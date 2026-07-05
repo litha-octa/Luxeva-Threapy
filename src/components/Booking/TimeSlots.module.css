@@ -25,3 +25,9 @@
   color: var(--white);
   border-color: var(--deep-brown);
 }
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}

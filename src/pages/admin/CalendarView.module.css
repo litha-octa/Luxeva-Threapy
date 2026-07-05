@@ -1,0 +1,81 @@
+.title {
+  font-size: 1.4rem;
+  color: var(--deep-brown);
+  margin-bottom: 1rem;
+}
+
+.legend {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.calendarWrap {
+  background: var(--white);
+  border: 1px solid var(--stone);
+  border-radius: 16px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* Override react-big-calendar styles */
+:global(.rbc-toolbar) {
+  margin-bottom: 1rem;
+}
+
+:global(.rbc-toolbar button) {
+  font-family: "DM Sans", sans-serif;
+  border-radius: 8px;
+  border-color: var(--stone);
+  color: var(--text);
+}
+
+:global(.rbc-toolbar button:hover) {
+  background: var(--cream);
+}
+
+:global(.rbc-toolbar button.rbc-active) {
+  background: var(--deep-brown);
+  color: var(--white);
+  border-color: var(--deep-brown);
+}
+
+:global(.rbc-header) {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  color: var(--text);
+}
+
+:global(.rbc-time-content) {
+  border-top: 1px solid var(--stone);
+}
+
+:global(.rbc-today) {
+  background: #faf5ef;
+}
+
+:global(.rbc-event) {
+  padding: 0.2rem 0.4rem;
+}
+
+:global(.rbc-time-slot) {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+}

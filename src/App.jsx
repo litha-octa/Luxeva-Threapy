@@ -1,21 +1,24 @@
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import HowItWorks from './components/HowItWorks/HowItWorks';
-import Services from './components/Services/Services';
-import Booking from './components/Booking/Booking';
-import Testimonials from './components/Testimonials/Testimonials';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
+import LandingPage from './pages/LandingPage';
+import Login from './pages/admin/Login';
+import AdminLayout from './pages/admin/AdminLayout';
+import CalendarView from './pages/admin/CalendarView';
+import BookingList from './pages/admin/BookingList';
 
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <HowItWorks />
-      <Services />
-      <Booking />
-      <Testimonials />
-      <Footer />
-    </>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<CalendarView />} />
+            <Route path="bookings" element={<BookingList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }

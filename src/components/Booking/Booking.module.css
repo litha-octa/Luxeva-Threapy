@@ -51,9 +51,20 @@
   transition: background 0.2s, transform 0.15s;
 }
 
-.submit:hover {
+.submit:hover:not(:disabled) {
   background: var(--accent);
   transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.conflict {
+  color: #b45309;
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
