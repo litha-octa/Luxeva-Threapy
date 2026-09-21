@@ -1,5 +1,5 @@
 node_modules
-dist
-.env
-supabase-schema.sql
-.claude
+client/node_modules
+server/node_modules
+server/.env
+client/.env
