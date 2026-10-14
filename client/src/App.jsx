@@ -1,22 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
-import LandingPage from './pages/LandingPage';
-import Login from './pages/admin/Login';
-import AdminLayout from './pages/admin/AdminLayout';
-import CalendarView from './pages/admin/CalendarView';
-import BookingList from './pages/admin/BookingList';
+import { AuthProvider } from './shared/contexts/AuthContext';
+import UserRoutes from './user/routes';
+import TherapistRoutes from './therapist/routes';
+import AdminRoutes from './admin/routes';
 
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/admin/login" element={<Login />} />
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<CalendarView />} />
-            <Route path="bookings" element={<BookingList />} />
-          </Route>
+          <Route path="/admin/*" element={<AdminRoutes />} />
+          <Route path="/therapist/*" element={<TherapistRoutes />} />
+          <Route path="/*" element={<UserRoutes />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
